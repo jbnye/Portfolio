@@ -1,7 +1,8 @@
-import { useContext, createContext, useEffect, useState } from "react";
+import { useContext, createContext, useEffect, useState, useMemo } from "react";
 
 interface ThemeStatusProps {
     darkMode: boolean;
+    setDarkMode: (select: boolean) => void;
 
 }
 
@@ -30,5 +31,27 @@ export const ThemeStatusProvider = ({children}: {children: React.ReactNode}) => 
         return () => window.removeEventListener("resize", checkBreakpoint);
     },[]);
 
+    useEffect(()=> {
+        localStorage.setItem("darkMode", darkMode.toString());
+        document.documentElement.classList.toggle("dark", darkMode);
+    },[darkMode]);
 
+    const value = useMemo(()=> ({
+        darkMode,
+        setDarkMode,
+        breakpoint,
+    }),[darkMode, breakpoint])
+
+
+    return (
+        <ThemeStatus.Provider value={value}>
+            {children}
+        </ThemeStatus.Provider>
+    )
+}
+
+export function useThemeContext() {
+    const context = useContext(ThemeStatus);
+    if(!context) throw new Error ("Could not create theme context");
+    return context;
 }
