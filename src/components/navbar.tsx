@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import navbarButtons from './helperFunctions/navbarButtons';
+import DarkModeSwitch from './darkModeSwitch';
 
 
 export default function Navbar (){
@@ -25,6 +26,7 @@ export default function Navbar (){
                     <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-slate-gray dark:bg-letterboxd-light-gray transition-all duration-300 group-hover:w-full" />
                 </Link>
                 ))}
+                <DarkModeSwitch />
              </div>
       </div>
   );
