@@ -27,7 +27,7 @@ export const projects = [
     technologies: ["Vite", "React", "TypeScript", "Tailwind"],
   },
   {
-    title: "Leetify Aim Rating Data Analytics",
+    title: "Leetify Aim Rating Data Analytics ",
     description:
       "I would like to see if Leetify's aim rating has a corilation on how well someone plays in counter strike and also the win percentages for each team. Will scrape thousands of games and players from Leetify and Faceit API.",
     githubUrl: "https://github.com/jbnye/AimRating",
@@ -35,4 +35,14 @@ export const projects = [
     youtubeDemoUrl: "",
     technologies: ["Vite", "React", "TypeScript", "Tailwind", "Python", "Matplotlib", "Playwright"],
   },
+  {
+    title: "Class Guides",
+    description:
+      "Social Media site to follow classes and upload, comment, and upvote resources used they find helpful for all classes at UofM Dearborn. Won best website in CIS 435 and was also recognized for outstanding project showcase by the college of engineering and computer science.",
+    githubUrl: "",
+    deployedUrl: "",
+    youtubeDemoUrl: "https://www.youtube.com/watch?v=eVlFDapBRPE",
+    technologies: ["Javascript", "PHP", "Bootstrap 5", "MySQL"],
+  },
+
 ];

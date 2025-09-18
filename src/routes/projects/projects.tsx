@@ -1,11 +1,15 @@
 import { projects } from "./projectsData";
 import { Link } from "react-router-dom";
 
-const projectIcons: Record<string, string> = {
-  "Letterboxd Higher or Lower": "/Images/favicon.svg",
-  "Wordle Clone": "/Images/Wordle_Logo.svg",
-  "Dodge Tracker Clone": "/Images/Magnifying_glass_icon.svg",
-  "Leetify Aim Rating Data Analytics": "/Images/Gaussian_distribution.svg",
+import { ArrowLeftSVG, GithubWhiteSVG, YoutubeSVG, FaviconSVG, MagGlassSVG,
+        CGSVG, WordleSVG, GlobeSVG, DataSVG } from "@/assets/svgs/svgs";
+
+const projectIcons: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
+  "Letterboxd Higher or Lower": FaviconSVG,
+  "Wordle Clone": WordleSVG,
+  "Dodge Tracker Clone": MagGlassSVG,
+  "Leetify Aim Rating Data Analytics": DataSVG,
+  "Class Guides": CGSVG,
 };
 
 export default function ProjectPage() {
@@ -13,13 +17,11 @@ export default function ProjectPage() {
     <div className="flex flex-col items-center w-full px-4 py-8">
       <div className="w-full max-w-3xl lg:max-w-5xl mx-auto px-2">
         <div className="mb-8 w-full flex flex-col gap-4">
-          {/* Don't touch this link per your request */}
           <Link
             to="/"
             className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors duration-200 group"
           >
-            <img
-              src="/Images/arrow-left.svg"
+            <ArrowLeftSVG
               className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform"
             />
             Back to Home
@@ -28,69 +30,75 @@ export default function ProjectPage() {
         </div>
 
         <div className="flex flex-col gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="flex justify-center items-center gap-6 p-4">
-                {/* Left: Icon */}
-                <div className="flex-shrink-0 flex items-center justify-center w-20 h-20 rounded-lg bg-gray-500">
-                    <img
-                    src={projectIcons[project.title] ?? "/favicon.ico"}
-                    alt={project.title + " icon"}
-                    className="object-contain w-12 h-12"
-                    />
-                </div>
+        {projects.map((project, index) => {
+          const IconComponent = projectIcons[project.title] as
+            | React.FC<React.SVGProps<SVGSVGElement>>
+            | undefined;
 
-                {/* Right: Content */}
-                <div className="flex flex-col flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
-                    <h2 className="text-2xl font-semibold">{project.title}</h2>
-                    </div>
-                    <p className="text-left mb-2">{project.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-2">
-                    {project.technologies.map((tech, techIndex) => (
-                        <span
-                        key={techIndex}
-                        className="px-3 py-1 text-xs font-medium rounded-full bg-gray-500"
-                        >
-                        {tech}
-                        </span>
-                    ))}
-                    </div>
-                    <div className="flex gap-4">
-                        {project.githubUrl && (
-                            <a
-                                href={project.githubUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-1 hover:scale-105"
-                                >
-                                <img src="/Images/github-mark.svg" className="h-6 w-6 " />
-                            </a>
-                        )}
-                        {project.deployedUrl && (
-                            <a
-                                href={project.deployedUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-1 hover:scale-105"
-                                >
-                                <img src="/Images/globe.svg" className="h-6 w-6 " />
-                                Live
-                            </a>
-                        )}
-                        {project.youtubeDemoUrl && (
-                            <a
-                                href={project.githubUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-1 hover:scale-105"
-                                >
-                                <img src="/Images/YouTube.svg" className="h-9 w-9" />
-                            </a>
-                        )}
-                    </div>
+          return (
+            <div key={index} className="flex justify-center items-center gap-6 p-4">
+              {/* Left */}
+              <div className="flex-shrink-0 flex items-center justify-center w-20 h-20 rounded-lg bg-gray-500">
+                {IconComponent ? (
+                  <IconComponent className="w-12 h-12" />
+                ) : (
+                  <img src="/favicon.ico" alt="default icon" className="w-12 h-12" />
+                )}
+              </div>
+
+              {/* Right */}
+              <div className="flex flex-col flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <h2 className="text-2xl font-semibold">{project.title}</h2>
                 </div>
+                <p className="text-left mb-2">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-3 py-1 text-xs font-medium rounded-full bg-gray-500"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex gap-4">
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 hover:scale-105"
+                    >
+                      <GithubWhiteSVG className="h-6 w-6" />
+                    </a>
+                  )}
+                  {project.deployedUrl && (
+                    <a
+                      href={project.deployedUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 hover:scale-105"
+                    >
+                      <GlobeSVG className="h-6 w-6 text-black dark:text-white" />
+                      Live
+                    </a>
+                  )}
+                  {project.youtubeDemoUrl && (
+                    <a
+                      href={project.youtubeDemoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 hover:scale-105"
+                    >
+                      <YoutubeSVG className="h-9 w-9" />
+                    </a>
+                  )}
+                </div>
+              </div>
             </div>
-          ))}
+          );
+        })}
         </div>
       </div>
     </div>
