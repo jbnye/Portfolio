@@ -36,9 +36,9 @@ export default function ProjectPage() {
             | undefined;
 
           return (
-            <div key={index} className="flex justify-center items-center gap-6 p-4">
+            <div key={index} className="flex justify-center items-start gap-6 ">
               {/* Left */}
-              <div className="flex-shrink-0 flex items-center justify-center w-20 h-20 rounded-lg bg-gray-500">
+              <div className="flex-shrink-0 flex items-center justify-center w-20 h-20 rounded-lg bg-gray-400">
                 {IconComponent ? (
                   <IconComponent className="w-12 h-12" />
                 ) : (

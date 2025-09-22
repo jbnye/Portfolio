@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -17,6 +18,11 @@
     --color-light-gray: oklch(0.85 0.010 240);
     --color-medium-gray: oklch(0.35 0.010 260);
     --color-letterboxd-dark-background-blue: oklch(0.2066 0.0101 248.31);
+    --color-test-purple: oklch(0.5556 0.2616 320.16);
+    --color-test-white1: oklch(0.873 0 0);
+    --color-test-black: oklch(0.4792 0 0);
+    --color-test-black2: oklch(0.28 0 40.24);
+    --color-test-black3: oklch(0.1533 0 146.12);
 }
 
 @theme inline {

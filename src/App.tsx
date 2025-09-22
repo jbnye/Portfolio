@@ -11,8 +11,8 @@ export default function App () {
 
     return (
         <div className="min-h-screen w-full flex flex-col 
-        bg-gradient-to-b from-letterboxd-lighter-gray to-letterboxd-light-gray
-        dark:bg-gradient-to-b dark:from-letterboxd-background dark:to-letterboxd-dark-background-blue ">
+        bg-[linear-gradient(45deg,theme(colors.test-white1),theme(colors.white))]
+        dark:bg-[linear-gradient(45deg,theme(colors.test-black2),theme(colors.test-black3))] ">
             <Navbar />
             <main className="flex flex-col flex-grow justify-center items-center text-center">
                 <Routes>
