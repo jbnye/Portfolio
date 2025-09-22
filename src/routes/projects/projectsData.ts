@@ -27,7 +27,7 @@ export const projects = [
     technologies: ["Vite", "React", "TypeScript", "Tailwind"],
   },
   {
-    title: "Leetify Aim Rating Data Analytics ",
+    title: "Leetify Aim Rating Data Analytics",
     description:
       "I would like to see if Leetify's aim rating has a corilation on how well someone plays in counter strike and also the win percentages for each team. Will scrape thousands of games and players from Leetify and Faceit API.",
     githubUrl: "https://github.com/jbnye/AimRating",

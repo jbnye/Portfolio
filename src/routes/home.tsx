@@ -1,10 +1,24 @@
-import headshot from "@/assets/Images/headshot.jpg"
+import headshot from "@/assets/Images/headshot.jpg";
+import { useState } from "react";
+import { Loader2 } from "lucide-react"
+
 export default function HomePage() {
+    const [headshotLoaded, SetHeadshotLoaded] = useState(true);
     return (
         <div className="flex flex-col w-[50%] justify-center items-center ">
             <div className="w-full h-full flex justify-center">
-                <div className="bg-red-500 border-b-black border-2 h-[200px] w-[200px] rounded-full flex items-center justify-center overflow-hidden">
-                    <img src={headshot} alt="profile" className="h-[200px] w-[200px] object-cover" />
+                <div className=" dark:border-white border-black border-2 h-[400px] w-[400px] rounded-full flex items-center justify-center overflow-hidden">
+                    {headshotLoaded && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10">
+                        <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
+                        </div>
+                    )}
+                    <img
+                        src={headshot}
+                        alt="Headshot"
+                        className="h-[400px] w-[400px] object-cover"
+                        onLoad={() => SetHeadshotLoaded(false)}
+                    />
                 </div>
             </div>
             <h1 className="text-4xl m-2">Jacob Nye</h1>
