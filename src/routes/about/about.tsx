@@ -1,26 +1,13 @@
-import {Link} from "react-router-dom";
-import { ArrowLeftSVG } from "@/assets/svgs/svgs";
 import { languages, frontend, backend, devOpsAndTools, databases } from "./aboutData";
 import {SkillSection} from "@/components/SkillSection";
+import BackToHome from "@/components/backToHome";
     
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col items-center w-full px-4 py-8">
       <div className="w-full max-w-3xl lg:max-w-5xl mx-auto px-2">
-        <div className="mb-8 w-full flex flex-col gap-4">
-          <Link
-            to="/"
-            className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors duration-200 group"
-          >
-            <ArrowLeftSVG
-              className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform"
-            />
-            Back to Home
-          </Link>
-          <h1 className="text-center text-4xl font-bold">Jacob Nye</h1>
-        </div>
-
+        <BackToHome title={"Jacob Nye"}/>
         <div className="flex flex-col items-start text-start gap-5">
         <div>
           <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">About Me</h2>
