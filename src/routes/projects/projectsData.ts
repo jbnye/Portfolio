@@ -24,7 +24,7 @@ export const projects = [
     githubUrl: "https://github.com/jbnye/Wordle",
     deployedUrl: "https://wordle-clone.jbnye.dev/",
     youtubeDemoUrl: "https://www.youtube.com/watch?v=KpcE3B7J_Wc&feature=youtu.be",
-    technologies: ["Vite", "React", "TypeScript", "Tailwind"],
+    technologies: ["Vite", "React", "TypeScript", "Tailwind", "Express"],
   },
   {
     title: "Leetify Aim Rating Data Analytics",

@@ -79,21 +79,48 @@ export function EmailSVG({ className, ...props }: React.SVGProps<SVGSVGElement>)
 }
 
 
-export function FaviconSVG({ className, ...props }: SVGProps) {
+export function FaviconSVG({ className, ...props }: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 300 120"
-      className={className}
+      viewBox="0 0 300 300"
+      className={`w-full h-full ${className}`}
       {...props}
     >
-      <text x="0" y="120" fontSize="150" fontFamily="Arial, sans-serif" fontWeight="bold" fill="oklch(0.7319 0.1858 52.98)">
+      <text
+        x="50"
+        y="150"
+        fontSize="150"
+        fontFamily="Arial, sans-serif"
+        fontWeight="bold"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="oklch(0.7319 0.1858 52.98)"
+      >
         L
       </text>
-      <text x="95" y="120" fontSize="150" fontFamily="Arial, sans-serif" fontWeight="bold" fill="oklch(0.7899 0.2343 147.07)">
+      <text
+        x="150"
+        y="150"
+        fontSize="150"
+        fontFamily="Arial, sans-serif"
+        fontWeight="bold"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="oklch(0.7899 0.2343 147.07)"
+      >
         H
       </text>
-      <text x="200" y="120" fontSize="150" fontFamily="Arial, sans-serif" fontWeight="bold" fill="oklch(0.7512 0.1332 232.35)">
+      <text
+        x="250"
+        y="150"
+        fontSize="150"
+        fontFamily="Arial, sans-serif"
+        fontWeight="bold"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="oklch(0.7512 0.1332 232.35)"
+      >
         L
       </text>
     </svg>
@@ -102,7 +129,7 @@ export function FaviconSVG({ className, ...props }: SVGProps) {
 
 export function DataSVG({ className, ...props }: SVGProps){
     return(
-<svg fill="black"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 241" className={className}  {...props}>
+<svg fill="white"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 241" className={className}  {...props}>
 <path d="M254,188V2H2v186h111v29H75v22h106v-22h-38v-29H254z M19,19h217v151H19L19,19z M195.732,141.339v0.141v7.02H60.268v-107  h7.02v99.839h10.485v-18.674H98.29v18.674h8.207v-36.67h20.518v36.67h8.259V69.668h20.518v71.671H164V49.324h20.518v92.014H195.732z  "/>
 </svg>
     )
@@ -176,7 +203,7 @@ export function MagGlassSVG({ className, ...props }: SVGProps) {
     >
       <path
         fill="none"
-        stroke="#000"
+        stroke="black"
         strokeWidth="36"
         strokeLinecap="round"
         d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"
@@ -193,7 +220,7 @@ export function WordleSVG({ className, ...props }: SVGProps) {
       className={className}
       {...props}
     >
-      <path d="M172.94,0H19.06A19.08,19.08,0,0,0,0,19.06V172.94A19.08,19.08,0,0,0,19.06,192H172.94A19.08,19.08,0,0,0,192,172.94V19.06A19.08,19.08,0,0,0,172.94,0Zm8.95,19.06V60.63H131.37V10.11h41.57A9,9,0,0,1,181.89,19.06ZM70.74,121.26V70.74h50.52v50.52Zm50.52,10.11v50.52H70.74V131.37ZM60.63,121.26H10.11V70.74H60.63ZM70.74,60.63V10.11h50.52V60.63Zm60.63,10.11h50.52v50.52H131.37ZM19.06,10.11H60.63V60.63H10.11V19.06A9,9,0,0,1,19.06,10.11ZM10.11,172.94V131.37H60.63v50.52H19.06A9,9,0,0,1,10.11,172.94Zm162.83,8.95H131.37V131.37h50.52v41.57A9,9,0,0,1,172.94,181.89Z" />
+      <path fill="black" d="M172.94,0H19.06A19.08,19.08,0,0,0,0,19.06V172.94A19.08,19.08,0,0,0,19.06,192H172.94A19.08,19.08,0,0,0,192,172.94V19.06A19.08,19.08,0,0,0,172.94,0Zm8.95,19.06V60.63H131.37V10.11h41.57A9,9,0,0,1,181.89,19.06ZM70.74,121.26V70.74h50.52v50.52Zm50.52,10.11v50.52H70.74V131.37ZM60.63,121.26H10.11V70.74H60.63ZM70.74,60.63V10.11h50.52V60.63Zm60.63,10.11h50.52v50.52H131.37ZM19.06,10.11H60.63V60.63H10.11V19.06A9,9,0,0,1,19.06,10.11ZM10.11,172.94V131.37H60.63v50.52H19.06A9,9,0,0,1,10.11,172.94Zm162.83,8.95H131.37V131.37h50.52v41.57A9,9,0,0,1,172.94,181.89Z" />
       <rect x="70.74" y="70.74" width="50.52" height="50.52" fill="#dabc45" />
       <rect x="131.37" y="70.74" width="50.52" height="50.52" fill="#7bb677" />
       <rect x="70.74" y="131.37" width="50.52" height="50.52" fill="#7bb677" />

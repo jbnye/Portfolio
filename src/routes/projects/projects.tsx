@@ -1,7 +1,6 @@
 import { projects } from "./projectsData";
-import { Link } from "react-router-dom";
 
-import { ArrowLeftSVG, GithubWhiteSVG, YoutubeSVG, FaviconSVG, MagGlassSVG,
+import { GithubWhiteSVG, YoutubeSVG, FaviconSVG, MagGlassSVG,
         CGSVG, WordleSVG, GlobeSVG, DataSVG } from "@/assets/svgs/svgs";
 import BackToHome from "@/components/backToHome";
 
@@ -17,7 +16,7 @@ export default function ProjectPage() {
   return (
     <div className="flex flex-col items-center w-full px-4 py-8">
       <div className="w-full max-w-3xl lg:max-w-5xl mx-auto px-2">
-        
+
         <BackToHome title="Projects" />
 
         <div className="flex flex-col gap-8">
@@ -28,12 +27,13 @@ export default function ProjectPage() {
 
           return (
             <div key={index} className="flex justify-center items-start gap-6 ">
+
               {/* Left */}
-              <div className="flex-shrink-0 flex items-center justify-center w-20 h-20 rounded-lg bg-gray-400">
+              <div className="flex-shrink-0 flex items-center justify-center w-20 h-20 mt-2 rounded-lg bg-gray-400">
                 {IconComponent ? (
-                  <IconComponent className="w-12 h-12" />
+                  <IconComponent className="w-full h-full p-2  fill-black " />
                 ) : (
-                  <img src="/favicon.ico" alt="default icon" className="w-12 h-12" />
+                  <img src="/favicon.ico" alt="default icon" className="w-full h-full p-2" />
                 )}
               </div>
 
@@ -47,7 +47,7 @@ export default function ProjectPage() {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 text-xs font-medium rounded-full bg-gray-500"
+                      className="px-3 py-1 text-xs font-medium rounded-full bg-test-black text-white"
                     >
                       {tech}
                     </span>

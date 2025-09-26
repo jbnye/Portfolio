@@ -39,7 +39,7 @@ export const experiences = [
   },
   {
     company: "University of Michigan - Dearborn",
-    title: "Lead Developer",
+    title: "Lead Developer - Senior Project",
     // team: "School Senior Project",
     period: "Sep 2022 - Dec 2022",
     description: "Lead a team to work on legacy internal site Translation Networks with University of Michigan Dearborn professors as the clients with their use cases respectfully. Major imporvements to make the site meet WCAG 2 standards.",

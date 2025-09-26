@@ -19,11 +19,13 @@ export default function Navbar (){
 
   return (
       <div className={`flex p-1 xl:mr-3 items-center text-bold text-slate-gray dark:text-white`}>
-            <div className='relative '>
+            {/*LEFT*/}
+            <div className='ml-2 flex justify-center items-center'>
                 <Link to="/" className="abosulute left-0">
-                    <img src="/vite.svg" alt="JN Logo" className="h-10 w-auto" />
+                    <a href="/" className="h-10 w-auto text-2xl" style={{ fontFamily: "'Zalando Sans Expanded', sans-serif" }}> JBN</a>
                 </Link>
             </div>
+            {/*Right*/}
             <div className='flex w-full justify-end gap-3'>
                 {buttons.map(({ label, path }) => (
                 <Link
