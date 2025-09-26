@@ -5,7 +5,7 @@
 
 export default function Footer() {
   return (
-    <div className="flex items-center justify-center text-center gap-10 p-3">
+    <div className="flex self-center items-center justify-between md:w-[50%] text-center text-sm md:text-lg gap-7 md:gap-10">
       {/* <a href="mailto:jn3268@gmail.com">
         <EmailSVG className="h-6 w-6 hover:scale-105 transition-transform" />
       </a>

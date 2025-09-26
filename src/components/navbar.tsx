@@ -22,11 +22,11 @@ export default function Navbar (){
             {/*LEFT*/}
             <div className='ml-2 flex justify-center items-center'>
                 <Link to="/" className="abosulute left-0">
-                    <a href="/" className="h-10 w-auto text-2xl" style={{ fontFamily: "'Zalando Sans Expanded', sans-serif" }}> JBN</a>
+                    <a href="/" className="h-10 w-auto text-sm md:text-2xl" style={{ fontFamily: "'Zalando Sans Expanded', sans-serif" }}> JBN</a>
                 </Link>
             </div>
             {/*Right*/}
-            <div className='flex w-full justify-end gap-3'>
+            <div className='flex w-full justify-end gap-1 md:gap-3 text-sm md:text-lg'>
                 {buttons.map(({ label, path }) => (
                 <Link
                     key={label}

@@ -83,14 +83,14 @@ export function FaviconSVG({ className, ...props }: React.SVGProps<SVGSVGElement
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 300 300"
+      viewBox="0 0 300 200"
       className={`w-full h-full ${className}`}
       {...props}
     >
       <text
         x="50"
-        y="150"
-        fontSize="150"
+        y="100"
+        fontSize="180"
         fontFamily="Arial, sans-serif"
         fontWeight="bold"
         textAnchor="middle"
@@ -100,9 +100,9 @@ export function FaviconSVG({ className, ...props }: React.SVGProps<SVGSVGElement
         L
       </text>
       <text
-        x="150"
-        y="150"
-        fontSize="150"
+        x="160"
+        y="100"
+        fontSize="180"
         fontFamily="Arial, sans-serif"
         fontWeight="bold"
         textAnchor="middle"
@@ -112,9 +112,9 @@ export function FaviconSVG({ className, ...props }: React.SVGProps<SVGSVGElement
         H
       </text>
       <text
-        x="250"
-        y="150"
-        fontSize="150"
+        x="270"
+        y="100"
+        fontSize="180"
         fontFamily="Arial, sans-serif"
         fontWeight="bold"
         textAnchor="middle"
