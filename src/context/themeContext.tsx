@@ -3,7 +3,7 @@ import { useContext, createContext, useEffect, useState, useMemo } from "react";
 interface ThemeStatusProps {
     darkMode: boolean;
     setDarkMode: (select: boolean) => void;
-
+    breakpoint: "mobile" | "tablet" | "desktop";
 }
 
 const ThemeStatus = createContext<ThemeStatusProps | undefined>(undefined);

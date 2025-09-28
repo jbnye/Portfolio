@@ -35,7 +35,7 @@ export default function Experience() {
                 className="flex justify-center gap-4 p-2 md:gap-6 md:p-4"
               >
                 {/* Left */}
-                <div className="flex-shrink-0 flex items-center justify-center w-14 h-14 md:w-20 md:h-20 rounded-lg bg-gray-400">
+                <div className="flex-shrink-0 flex items-center justify-center w-14 h-14 md:w-20 mt-1 md:h-20 rounded-lg bg-gray-400">
                   {IconComponent ? (
                     <IconComponent className="w-full h-full p-2" />
                   ) : (

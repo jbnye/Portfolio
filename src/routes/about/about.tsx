@@ -51,7 +51,7 @@ export default function AboutPage() {
                   target="_blank"
                   className="text-blue-600 hover:underline"
                 >
-                  OP.gg
+                  OP.GG
                 </a>
                 ,{" "}
                 <a

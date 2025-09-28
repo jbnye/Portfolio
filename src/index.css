@@ -22,7 +22,7 @@
     --color-test-purple: oklch(0.5556 0.2616 320.16);
     --color-test-white1: oklch(0.873 0 0);
     --color-test-black: oklch(0.4792 0 0);
-    --color-test-black2: oklch(0.28 0 40.24);
+    --color-test-black2: oklch(0.30 0 40.24);
     --color-test-black3: oklch(0.3101 0 40.24);
 }
 

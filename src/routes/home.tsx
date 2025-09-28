@@ -2,12 +2,13 @@ import headshot from "@/assets/Images/HeadshotCropped.png";
 import { useState } from "react";
 import { Loader2 } from "lucide-react"
 
+
 export default function HomePage() {
     const [headshotLoaded, SetHeadshotLoaded] = useState(true);
     return (
-        <div className="flex flex-col md:w-[50%] justify-center items-center ">
+        <div className="flex flex-col flex-wrap md:w-[50%] justify-center items-center ">
             <div className="w-full h-full flex justify-center">
-                <div className="relative border-2 dark:border-white border-black aspect-square w-64 sm:w-80 md:w-96 rounded-full flex items-center justify-center overflow-hidden">
+                <div className="relative border-2 dark:border-white border-black aspect-square w-50 sm:w-80 md:w-96 rounded-full flex items-center justify-center overflow-hidden">
                 {headshotLoaded && (
                     <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10 rounded-full">
                     <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />

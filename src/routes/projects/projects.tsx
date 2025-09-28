@@ -22,11 +22,11 @@ const projectIcons: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
 
 export default function ProjectPage() {
   return (
-    <div className="flex flex-col items-center w-full px-4 py-8">
-      <div className="w-full max-w-3xl lg:max-w-5xl mx-auto px-2">
+    <div className="flex flex-col items-center w-full px-2 py-6 md:px-4 md:py-8">
+      <div className="w-full max-w-2xl md:max-w-5xl mx-auto">
         <BackToHome title="Projects" />
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6 md:gap-8">
           {projects.map((project, index) => {
             const IconComponent = projectIcons[project.title] as
               | React.FC<React.SVGProps<SVGSVGElement>>
@@ -35,10 +35,10 @@ export default function ProjectPage() {
             return (
               <div
                 key={index}
-                className="flex justify-center gap-4 md:gap-6 p-4"
+                className="flex justify-center gap-4 p-2 md:gap-6 md:p-4"
               >
                 {/* Left */}
-                <div className="flex-shrink-0 flex items-center mt-1 justify-center w-16 h-16 md:w-20 md:h-20 rounded-lg bg-gray-400">
+                <div className="flex-shrink-0 flex mt-1 items-center justify-center w-14 h-14 md:w-20 md:h-20 rounded-lg bg-gray-400">
                   {IconComponent ? (
                     <IconComponent className="w-full h-full p-2 fill-black" />
                   ) : (
@@ -51,19 +51,21 @@ export default function ProjectPage() {
                 </div>
 
                 {/* Right */}
-                <div className="flex flex-col flex-1 min-w-0 text-start">
-                  <h2 className="text-xl md:text-2xl font-semibold mb-1">
-                    {project.title}
-                  </h2>
-                  <p className="text-sm md:text-base mb-2">
-                    {project.description}
-                  </p>
+                <div className="flex-1 min-w-0 justify-start text-start">
+                  <div className="flex flex-col gap-1 mb-2 md:mb-3">
+                    <h2 className="text-lg md:text-2xl font-semibold text-foreground">
+                      {project.title}
+                    </h2>
+                    <p className="text-xs md:text-sm mt-1">
+                      {project.description}
+                    </p>
+                  </div>
 
-                  <div className="flex flex-wrap gap-2 mb-2">
+                  <div className="flex flex-wrap gap-1.5 md:gap-2 mb-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-2 md:px-3 py-1 text-[10px] md:text-sm font-medium rounded-full bg-test-black text-white"
+                        className="px-2 py-0.5 md:px-3 md:py-1 text-[0.65rem] md:text-xs font-medium rounded-full bg-test-black text-white"
                       >
                         {tech}
                       </span>
