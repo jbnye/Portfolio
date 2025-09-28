@@ -12,7 +12,7 @@ export default function App() {
     return (
         <div className="min-h-screen w-full flex flex-col 
         bg-[linear-gradient(45deg,theme(colors.test-white1),theme(colors.white))]
-        dark:bg-[linear-gradient(45deg,theme(colors.test-black2),theme(colors.test-black3))] ">
+        dark:bg-[linear-gradient(45deg,theme(colors.bg-dark1),theme(colors.bg-dark2))] ">
             <Navbar />
             <main className="flex flex-col flex-grow justify-center items-center text-center">
                 <Routes>
