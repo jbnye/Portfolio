@@ -15,7 +15,6 @@ export const experiences = [
       "Attention to Detail",
       "Communication",
       "Conflict Resolution",
-      "De-escalation"
     ],
   },
   {

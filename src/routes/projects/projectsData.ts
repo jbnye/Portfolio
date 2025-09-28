@@ -20,7 +20,7 @@ export const projects = [
   {
     title: "Wordle Clone",
     description:
-      "A near-identical clone of the popular game Wordle, purchased by The New York Times. This version is not limited to one word per day.",
+      "A near-identical clone of the popular game Wordle, purchased by The New York Times. This version is not limited to one word per day. Usable when server is offline or online.",
     githubUrl: "https://github.com/jbnye/Wordle",
     deployedUrl: "https://wordle-clone.jbnye.dev/",
     youtubeDemoUrl: "https://www.youtube.com/watch?v=KpcE3B7J_Wc&feature=youtu.be",

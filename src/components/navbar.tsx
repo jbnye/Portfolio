@@ -14,14 +14,14 @@ export default function Navbar() {
   const NavLinks = () => (
     <>
       {buttons.map(({ label, path }) => (
-        <Link
+      <Link
           key={label}
           to={path}
-          className="p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded"
-          onClick={() => setSidebarOpen(false)}
-        >
+          className="relative group p-2 hover:cursor-pointer"
+      >
           {label}
-        </Link>
+          <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-slate-gray dark:bg-letterboxd-light-gray transition-all duration-300 group-hover:w-full" />
+      </Link>
       ))}
 
       <ResumeDialog/>

@@ -5,7 +5,7 @@
 
 export default function Footer() {
   return (
-    <div className="flex flex-wrap justify-center items-center md:self-center gap-4 md:gap-10 max-w-full w-full md:w-[50%] text-center text-sm md:text-lg">
+    <div className="flex flex-wrap justify-center items-center md:self-center gap-4 md:gap-10 max-w-full w-full md:w-[50%] text-center text-sm md:text-lg py-2">
       <a href="mailto:jn3268@gmail.com" className="hover:scale-105 transition-transform hover:text-test-purple">
         <span>jn3268@gmail.com</span>
       </a>
