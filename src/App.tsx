@@ -7,7 +7,7 @@ import Navbar from './components/navbar';
 import Footer from "./components/footer";
 import ErrorPage from './routes/error';
 
-export default function App () {
+export default function App() {
 
     return (
         <div className="min-h-screen w-full flex flex-col 

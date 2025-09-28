@@ -23,7 +23,7 @@ export const experiences = [
     title: "NOC Technician",
     // team: "",
     period: "Sep 2024 - Dec 2024",
-    description: "In charge of monitoring and responding to network backbone alarms for switches, routers, and cisco transport units. Also in charge of change management.",
+    description: "Responsible for monitoring and responding to network backbone alarms for switches, routers, and Cisco Transport Units, as well as handling change management.",
     icon: "/Images/favicon.svg",
     skills: [
       "Alarm Monitoring",
@@ -42,7 +42,7 @@ export const experiences = [
     title: "Lead Developer - Senior Project",
     // team: "School Senior Project",
     period: "Sep 2022 - Dec 2022",
-    description: "Lead a team to work on legacy internal site Translation Networks with University of Michigan Dearborn professors as the clients with their use cases respectfully. Major imporvements to make the site meet WCAG 2 standards.",
+    description: "Led a team to work on legacy internal site Translation Networks with University of Michigan Dearborn professors as the clients with their use cases respectfully. Made major improvements to bring the site in line with WCAG 2 standards.",
     icon: "/Images/favicon.svg",
     skills: [
       "Javascript",
