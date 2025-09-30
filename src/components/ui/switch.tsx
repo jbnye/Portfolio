@@ -22,14 +22,16 @@ function Switch({ className, ...props }: React.ComponentProps<typeof SwitchPrimi
           "w-[1.3rem] h-[1.3rem]",
           "bg-black data-[state=checked]:bg-black",
           "transition-transform duration-500 ease-in-out",
-          "data-[state=checked]:translate-x-[calc(4rem-1.15rem-0.25rem)] data-[state=checked]:rotate-180"
+          "data-[state=checked]:translate-x-[calc(4rem-1.15rem-0.25rem)] data-[state=checked]:rotate-360"
         )}
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80" className="w-full h-full">
+          <g transform="rotate(-20)">
           <circle r="39" />
           <path fill="#fff" d="M0,38a38,38 0 0 1 0,-76a19,19 0 0 1 0,38a19,19 0 0 0 0,38" />
           <circle r="5" cy="19" fill="#fff" />
           <circle r="5" cy="-19" />
+          </g>
         </svg>
       </SwitchPrimitive.Thumb>
     </SwitchPrimitive.Root>

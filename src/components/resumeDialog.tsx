@@ -10,9 +10,10 @@ export default function ResumeDialog() {
     <Dialog>
         <DialogTrigger asChild>
         <button
-            className="p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded text-left"
+            className="relative p-2 rounded text-left hover:cursor-pointer group"
         >
             Resume
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-slate-gray dark:bg-letterboxd-light-gray transition-all duration-300 group-hover:w-full" />
         </button>
         </DialogTrigger>
         <DialogContent className="flex h-[90vh] max-w-6xl flex-col p-0">

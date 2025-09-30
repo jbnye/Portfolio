@@ -2,7 +2,6 @@ import headshot from "@/assets/Images/HeadshotCropped.png";
 import { useState } from "react";
 import { Loader2 } from "lucide-react"
 
-
 export default function HomePage() {
     const [headshotLoaded, SetHeadshotLoaded] = useState(true);
     return (

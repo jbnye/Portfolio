@@ -1,0 +1,32 @@
+
+<svg width="250" height="100" viewBox="0 0 250 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@700&amp;display=swap');
+
+    .initials {
+      /* Added Arial as a reliable local fallback */
+      font-family: 'Zalando Sans Expanded', Arial, sans-serif;
+      /* Set font weight to bold */
+      font-weight: 700;
+      /* Adjust font size to ensure the letters fill the vertical space */
+      font-size: 85px;
+      fill: #000000; /* Set to pure black for high contrast */
+    }
+
+    .guideline {
+      stroke: #000000; /* Updated to black */
+      stroke-width: 4; /* Updated to be big and fat */
+    }
+  </style>
+
+  <!-- Horizontal Guideline 1: Top Line (Y=10) -->
+  <line x1="20" y1="30" x2="150" y2="30" class="guideline" />
+
+  <!-- Horizontal Guideline 2: Bottom Line (Y=90) -->
+  <line x1="20" y1="90" x2="150" y2="90" class="guideline" />
+
+  <!--
+    The Text "JN" is positioned so the baseline (y=90) sits on the bottom line.
+  -->
+  <text x="20" y="90" class="initials">JN</text>
+</svg>
