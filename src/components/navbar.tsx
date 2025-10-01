@@ -34,43 +34,12 @@ export default function Navbar() {
       {/* Left */}
       <div className="ml-2 flex justify-center items-center">
         <Link to="/" className="absolute left-0">
-          {/* <span
+          <span
             className="ml-2 h-10 w-auto text-xl md:text-2xl"
             style={{ fontFamily: "'Zalando Sans Expanded', sans-serif" }}
           >
             JN
-          </span> */}
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80" className=" ml-2 h-10 w-auto">
-            <g transform="rotate()">
-            <circle r="39" />
-              <path fill="#fff" d="M0,38a38,38 0 0 1 0,-76a19,19 0 0 1 0,38a19,19 0 0 0 0,38" />
-                <text
-                  x="-2"
-                  y="-15"
-                  text-anchor="middle"
-                  dominant-baseline="middle"
-                  font-size="30"
-                  fill="black"
-                  font-family="Arial, sans-serif"
-                  transform="rotate(0)"
-                  >
-                  J
-                  </text>
-                  <text
-                  x="0"
-                  y="23"
-                  text-anchor="middle"
-                  dominant-baseline="middle"
-                  font-size="30"
-                  fill="white"
-                  font-family="Arial, sans-serif"
-                  transform="rotate(0)"
-                  >
-                  N
-                </text>
-              </g>
-            </svg>
-
+          </span>
         </Link>
       </div>
 
@@ -124,3 +93,35 @@ export default function Navbar() {
     </div>
   );
 }
+
+
+          // <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80" className=" ml-2 h-10 w-auto">
+          //   <g transform="rotate()">
+          //   <circle r="39" />
+          //     <path fill="#fff" d="M0,38a38,38 0 0 1 0,-76a19,19 0 0 1 0,38a19,19 0 0 0 0,38" />
+          //       <text
+          //         x="-2"
+          //         y="-15"
+          //         text-anchor="middle"
+          //         dominant-baseline="middle"
+          //         font-size="30"
+          //         fill="black"
+          //         font-family="Arial, sans-serif"
+          //         transform="rotate(0)"
+          //         >
+          //         J
+          //         </text>
+          //         <text
+          //         x="0"
+          //         y="23"
+          //         text-anchor="middle"
+          //         dominant-baseline="middle"
+          //         font-size="30"
+          //         fill="white"
+          //         font-family="Arial, sans-serif"
+          //         transform="rotate(0)"
+          //         >
+          //         N
+          //       </text>
+          //     </g>
+          //   </svg>
