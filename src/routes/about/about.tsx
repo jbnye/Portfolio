@@ -7,6 +7,7 @@ import {
 } from "./aboutData";
 import { SkillSection } from "@/components/SkillSection";
 import BackToHome from "@/components/backToHome";
+import GamingCarousel from "@/components/gamingCarousel";
 
 export default function AboutPage() {
   return (
@@ -168,6 +169,7 @@ export default function AboutPage() {
               <SkillSection title="Databases" skills={databases} />
               <SkillSection title="DevOps & Tools" skills={devOpsAndTools} />
             </div>
+            <GamingCarousel />
           </div>
         </div>
       </div>
