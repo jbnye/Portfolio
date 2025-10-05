@@ -1,19 +1,19 @@
-export const galleries = {
+export const carouselGallery = {
   streetfighter: [
-    { src: "/Carousel/Somethingsweet24.png", description: "Street Fighter tournament final screenshot" },
-    { src: "/Carousel/Limelight3.png", description: "Combo setup training" },
-    { src: "/Carousel/NeutralGround63.png", description: "Combo setup training" },
+    { src: "/Carousel/Somethingsweet24.png", description: "First place Toledo 2v2 SF local" },
+    { src: "/Carousel/Limelight3.png", description: "Second place 1v1 Toledo Local" },
+    { src: "/Carousel/NeutralGround63.png", description: "Third place Detroit local" },
   ],
   leagueoflegends: [
-    { src: "/Carousel/Challenger.png", description: "Challenger rank stats" },
-    { src: "/Carousel/S14_GM.png", description: "Pentakill moment" },
-    { src: "/Carousel/63.png", description: "Pentakill moment" },
-    { src: "/Carousel/winloss.jpg", description: "Pentakill moment" },
+    { src: "/Carousel/Challenger.jpg", description: "Top 100 Season 2017" },
+    { src: "/Carousel/S14_GM.png", description: "Top 1000 2024" },
+    { src: "/Carousel/63.png", description: "Top 1000 season 2018" },
+    { src: "/Carousel/winloss.jpg", description: "Top 1000 season 2019" },
   ],
   mordhau: [
-    { src: "/Carousel/MordhauTop10.jpg", description: "Mordhau competitive match moments" },
-    { src: "/Carousel/Venatus.png", description: "Clutch 1v3 victory" },
-    { src: "/Carousel/Rank1Despacito.png", description: "Clutch 1v3 victory" },
-    { src: "/Carousel/VenatusLegion.png", description: "Clutch 1v3 victory" },
+    { src: "/Carousel/MordhauTop10.jpg", description: "Top 10 ranked duels worldwide" },
+    { src: "/Carousel/Venatus.png", description: "2nd place 5,000 league tournament" },
+    { src: "/Carousel/Rank1Despacito.png", description: "Rank 1 Despacito's MMR Leaderboard" },
+    { src: "/Carousel/VenatusLegion.png", description: "2nd place Venatus skirmish tournament" },
   ],
 };

@@ -27,9 +27,9 @@ export default function GamingCarousel({ title, images }: GamingCarouselProps) {
           Open {title} Gallery
         </button>
       </DialogTrigger>
-      <DialogContent className="max-w-4xl w-full h-[80vh] flex flex-col">
+      <DialogContent className="w-full max-w-4xl h-[80vh] sm:h-[70vh] md:h-[80vh] flex flex-col">
         <DialogHeader>
-          <DialogTitle>{title} Screenshots</DialogTitle>
+          <DialogTitle className="text-base sm:text-lg md:text-xl">{title}</DialogTitle>
         </DialogHeader>
 
         <div className="flex-1">
@@ -38,14 +38,14 @@ export default function GamingCarousel({ title, images }: GamingCarouselProps) {
               {images.map((item, idx) => (
                 <CarouselItem
                   key={idx}
-                  className="flex flex-col items-center justify-center h-[60vh] gap-4"
+                  className="flex flex-col items-center justify-center h-[50vh] sm:h-[60vh] gap-2 sm:gap-4"
                 >
                   <img
                     src={item.src}
                     alt={`Screenshot ${idx + 1}`}
-                    className="max-h-[50vh] rounded-lg object-contain"
+                    className="max-h-[40vh] sm:max-h-[50vh] w-auto rounded-lg object-contain"
                   />
-                  <p className="text-sm md:text-base text-center text-gray-700 dark:text-gray-300">
+                  <p className="text-xs sm:text-sm md:text-base text-center text-gray-700 dark:text-gray-300">
                     {item.description}
                   </p>
                 </CarouselItem>

@@ -8,6 +8,7 @@ import {
 import { SkillSection } from "@/components/SkillSection";
 import BackToHome from "@/components/backToHome";
 import GamingCarousel from "@/components/gamingCarousel";
+import {carouselGallery} from "@/components/carouselGallery";
 
 export default function AboutPage() {
   return (
@@ -169,7 +170,9 @@ export default function AboutPage() {
               <SkillSection title="Databases" skills={databases} />
               <SkillSection title="DevOps & Tools" skills={devOpsAndTools} />
             </div>
-            <GamingCarousel />
+            <GamingCarousel title="Street Fighter" images={carouselGallery.streetfighter} />
+            <GamingCarousel title="League of Legends" images={carouselGallery.leagueoflegends} />
+            <GamingCarousel title="Mordhau" images={carouselGallery.mordhau} />
           </div>
         </div>
       </div>
