@@ -18,6 +18,7 @@ export default function Navbar() {
           key={label}
           to={path}
           className="relative group p-2 hover:cursor-pointer"
+          onClick={() => setSidebarOpen(false)}
       >
           {label}
           <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-slate-gray dark:bg-letterboxd-light-gray transition-all duration-300 group-hover:w-full" />

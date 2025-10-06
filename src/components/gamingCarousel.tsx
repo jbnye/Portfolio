@@ -4,29 +4,30 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from "@/components/ui/dialog"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-
+} from "@/components/ui/carousel"
 
 interface GamingCarouselProps {
-  title: string,
-  images: {src: string, description: string}[],
+  title: string
+  images: { src: string; description: string }[]
+  children: React.ReactNode 
 }
 
-export default function GamingCarousel({ title, images }: GamingCarouselProps) {
+export default function GamingCarousel({
+  title,
+  images,
+  children,
+}: GamingCarouselProps) {
   return (
     <Dialog>
-      <DialogTrigger asChild>
-        <button className="px-4 py-2 bg-test-black text-white rounded-lg hover:bg-test-black/80">
-          Open {title} Gallery
-        </button>
-      </DialogTrigger>
+      <DialogTrigger asChild>{children}</DialogTrigger>
+
       <DialogContent className="w-full max-w-4xl h-[80vh] sm:h-[70vh] md:h-[80vh] flex flex-col">
         <DialogHeader>
           <DialogTitle className="text-base sm:text-lg md:text-xl">{title}</DialogTitle>
@@ -57,5 +58,5 @@ export default function GamingCarousel({ title, images }: GamingCarouselProps) {
         </div>
       </DialogContent>
     </Dialog>
-  );
+  )
 }

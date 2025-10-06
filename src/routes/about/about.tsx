@@ -11,6 +11,7 @@ import GamingCarousel from "@/components/gamingCarousel";
 import {carouselGallery} from "@/components/carouselGallery";
 
 export default function AboutPage() {
+
   return (
     <div className="flex flex-col items-center w-full px-4 py-8">
       <div className="w-full max-w-3xl lg:max-w-5xl mx-auto px-2">
@@ -36,9 +37,26 @@ export default function AboutPage() {
 
               <p>
                 I have been a competitive gamer for over 15 years. I achieved
-                Challenger in League of Legends, won tournaments in Street
-                Fighter, and played on the best team in a niche game called
-                Mordhau. I've begun to harness that same competitiveness and
+                Top 100 in {" "} 
+                <GamingCarousel title="League of Legends" images={carouselGallery.leagueoflegends}>
+                  <span
+                    className="font-bold group relative hover:cursor-pointer inline-block hover:scale-105"
+                  >
+                    League of Legends
+                  </span>
+                </GamingCarousel>, won tournaments in {" "}
+                <GamingCarousel title="Street Fighter" images={carouselGallery.streetfighter}>
+                  <span className="font-bold group relative hover:cursor-pointer inline-block hover:scale-105">
+                  Street Fighter
+                  </span>
+                </GamingCarousel>
+                , and was the official king of second place in most tournaments for a niche game called {" "}
+                <GamingCarousel title="Mordhau" images={carouselGallery.mordhau}>
+                  <span className="font-bold group relative hover:cursor-pointer inline-block hover:scale-105">
+                    Mordhau
+                  </span>
+                </GamingCarousel>
+                . I've begun to harness that same competitiveness and
                 drive for improvement in my coding journey. I try to code and
                 learn every day and will continue to do so for the foreseeable
                 future.
@@ -170,9 +188,6 @@ export default function AboutPage() {
               <SkillSection title="Databases" skills={databases} />
               <SkillSection title="DevOps & Tools" skills={devOpsAndTools} />
             </div>
-            <GamingCarousel title="Street Fighter" images={carouselGallery.streetfighter} />
-            <GamingCarousel title="League of Legends" images={carouselGallery.leagueoflegends} />
-            <GamingCarousel title="Mordhau" images={carouselGallery.mordhau} />
           </div>
         </div>
       </div>
