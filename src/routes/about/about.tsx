@@ -9,6 +9,7 @@ import { SkillSection } from "@/components/SkillSection";
 import BackToHome from "@/components/backToHome";
 import GamingCarousel from "@/components/gamingCarousel";
 import {carouselGallery} from "@/components/carouselGallery";
+import FadeInOnScroll from "@/components/FadeInOnScrol";
 
 export default function AboutPage() {
 
@@ -176,17 +177,30 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Skills */}
           <div className="flex flex-col gap-3 w-full">
             <h2 className="text-xl md:text-2xl font-bold text-black dark:text-white">
               Skills
             </h2>
             <div className="space-y-4 mt-3 text-gray-900 dark:text-gray-100">
-              <SkillSection title="Languages" skills={languages} />
-              <SkillSection title="Frontend" skills={frontend} />
-              <SkillSection title="Backend" skills={backend} />
-              <SkillSection title="Databases" skills={databases} />
-              <SkillSection title="DevOps & Tools" skills={devOpsAndTools} />
+              <FadeInOnScroll direction="up" delay={100}>
+                <SkillSection title="Languages" skills={languages} />
+              </FadeInOnScroll>
+
+              <FadeInOnScroll direction="up" delay={200}>
+                <SkillSection title="Frontend" skills={frontend} />
+              </FadeInOnScroll>
+
+              <FadeInOnScroll direction="up" delay={300}>
+                <SkillSection title="Backend" skills={backend} />
+              </FadeInOnScroll>
+
+              <FadeInOnScroll direction="up" delay={400}>
+                <SkillSection title="Databases" skills={databases} />
+              </FadeInOnScroll>
+
+              <FadeInOnScroll direction="up" delay={500}>
+                <SkillSection title="DevOps & Tools" skills={devOpsAndTools} />
+              </FadeInOnScroll>
             </div>
           </div>
         </div>
