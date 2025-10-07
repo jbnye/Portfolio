@@ -20,6 +20,7 @@ export default function AboutPage() {
 
         <div className="flex flex-col items-start text-start gap-8">
           {/* About Me */}
+          <FadeInOnScroll direction="up" delay={100}>
           <div>
             <h2 className="text-xl md:text-2xl font-bold text-black dark:text-white">
               About Me
@@ -142,8 +143,10 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
+          </FadeInOnScroll>
 
           {/* Education */}
+          <FadeInOnScroll direction="up" delay={100}>
           <div className="w-full">
             <h2 className="text-xl md:text-2xl font-bold text-black dark:text-white">
               Education & Certifications
@@ -176,6 +179,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+          </FadeInOnScroll>
 
           <div className="flex flex-col gap-3 w-full">
             <h2 className="text-xl md:text-2xl font-bold text-black dark:text-white">

@@ -1,10 +1,10 @@
 import { useRef, useState, useEffect } from "react";
-import { cn } from "@/lib/utils"; // optional if you use cn for merging classes
+import { cn } from "@/lib/utils"; 
 
 interface FadeInOnScrollProps {
   children: React.ReactNode;
   className?: string;
-  direction?: "up" | "down" | "left" | "right"; // optional slide direction
+  direction?: "up" | "down" | "left" | "right"; 
   delay?: number;
 }
 
@@ -31,7 +31,7 @@ export default function FadeInOnScroll({
     };
   }, []);
 
-  // Direction offset for animation
+
   const offset =
     direction === "up"
       ? "translate-y-8"
