@@ -1,5 +1,5 @@
 import { projects } from "./projectsData";
-
+import { motion } from "framer-motion";
 import {
   GithubWhiteSVG,
   YoutubeSVG,
@@ -33,6 +33,11 @@ export default function ProjectPage() {
               | undefined;
 
             return (
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
+              >
               <div
                 key={index}
                 className="flex justify-center gap-4 p-2 md:gap-6 md:p-4"
@@ -107,6 +112,7 @@ export default function ProjectPage() {
                   </div>
                 </div>
               </div>
+            </motion.div>
             );
           })}
         </div>

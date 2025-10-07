@@ -1,5 +1,5 @@
 import { experiences } from "./experienceData";
-
+import { motion } from "framer-motion";
 import {
   USSignalSVG,
   UofMDearbornSVG,
@@ -30,6 +30,17 @@ export default function Experience() {
                 | undefined;
 
             return (
+              <motion.div
+                key={index}
+                initial={{ x: index % 2 === 0 ? -200 : 200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{
+                  duration: 1, 
+                  ease: "easeOut", 
+                  delay: index * 0.15, 
+                }}
+                className="flex justify-center gap-4 p-2 md:gap-6 md:p-4"
+              >
               <div
                 key={index}
                 className="flex justify-center gap-4 p-2 md:gap-6 md:p-4"
@@ -78,6 +89,7 @@ export default function Experience() {
                   </div>
                 </div>
               </div>
+              </motion.div>
             );
           })}
         </div>
