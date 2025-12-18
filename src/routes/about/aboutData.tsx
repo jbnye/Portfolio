@@ -30,6 +30,6 @@ export  const databases: Record<string, React.FC<React.SVGProps<SVGSVGElement>>>
 export  const devOpsAndTools: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
     "Git": GitSVG,
     "GitHub": GithubWhiteSVG,
-    "Docker": DockerSVG,
+    // "Docker": DockerSVG,
     "Railway": RailwaySVG,
 }

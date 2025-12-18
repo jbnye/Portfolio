@@ -45,7 +45,7 @@ export default function FadeInOnScroll({
     <div
       ref={ref}
       className={cn(
-        "transition-all duration-700 ease-out opacity-0",
+        "transition-all duration-700 ease-out opacity-0 w-full",
         !isVisible
           ? `${offset}`
           : "opacity-100 translate-y-0 translate-x-0",
