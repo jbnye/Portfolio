@@ -9,6 +9,7 @@ import {
   WordleSVG,
   GlobeSVG,
   DataSVG,
+  ChivPugBotSVG
 } from "@/assets/svgs/svgs";
 import BackToHome from "@/components/backToHome";
 
@@ -18,6 +19,7 @@ const projectIcons: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
   "Dodge Tracker Clone": MagGlassSVG,
   "Leetify Aim Rating Data Analytics": DataSVG,
   "Class Guides": CGSVG,
+  "Chiv Pug Bot": ChivPugBotSVG,
 };
 
 export default function ProjectPage() {

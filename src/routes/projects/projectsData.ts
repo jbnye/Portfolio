@@ -5,8 +5,16 @@ export const projects = [
       "A game where the user must choose between two films and select the higher-rated movie. Features a functioning leaderboard, Google logins, and difficulty levels. Scraped the top 12,000 most popular Letterboxd entries.",
     githubUrl: "https://github.com/jbnye/letterboxd-higher-or-lower",
     deployedUrl: "https://letterboxd-higher-or-lower.jbnye.dev/",
-    youtubeDemoUrl: "",
+    youtubeDemoUrl: "youtu.be/7OdFYyjOAbQ",
     technologies: ["Vite", "React", "TypeScript", "Tailwind", "PostgreSQL", "Node.js", "Express", "Redis", "Axios", "Cheerio", "Railway"],
+  },
+  {
+    title: "Chiv Pug Bot",
+    description: 
+      "Discord bot using discord.js. Used by over 200 users for a Chivalry Medieval Warfare community that plays pugs. Tracks wins and loses along with using ts-trueskill library to track mmr. Features additional functionality such as, canceling, reverting, leaderboards, match and player looks ups.",
+    githubUrl: "https://github.com/jbnye/Chiv_Pug_Bot",
+    youtubeDemoUrl: "",
+    technologies: ["Typescript", "Discord.js", "Discord API", "Node.js", "PostgresSQL", "Redis", "Railway", ]
   },
   {
     title: "Dodge Tracker Clone",
