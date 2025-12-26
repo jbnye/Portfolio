@@ -1,5 +1,5 @@
 import { TypescriptSVG, JavascriptSVG, PythonSVG, HTML5SVG, CSSSVG, ReactSVG, TailwindCSSSVG, ViteSVG, NodeJSSVG, CPPSVG,
-    ExpressSVG, PostgresSVG, MySQLSVG, GitSVG, GithubWhiteSVG, DockerSVG, RailwaySVG } from "@/assets/svgs/svgs";
+    ExpressSVG, PostgresSVG, MySQLSVG, GitSVG, GithubWhiteSVG,  RailwaySVG } from "@/assets/svgs/svgs";
 
 
 

@@ -2,7 +2,7 @@
 export const experiences = [
     {
     company: "Chipotle",
-    title: "Team Member",
+    title: "Crew Member",
     // team: "",
     period: "Sep 2025 - Present",
     description: "Collaborated with team members in a fast-paced environment to prepare and serve food while ensuring quality and consistency. Delivered excellent customer service, maintained cleanliness and food safety standards, and adapted quickly to changing priorities during peak hours.",

@@ -13,7 +13,7 @@ export const projects = [
     description: 
       "Discord bot using discord.js. Used by over 200 users for a Chivalry Medieval Warfare community that plays pugs. Tracks wins and loses along with using ts-trueskill library to track mmr. Features additional functionality such as, canceling, reverting, leaderboards, match and player looks ups.",
     githubUrl: "https://github.com/jbnye/Chiv_Pug_Bot",
-    youtubeDemoUrl: "",
+    youtubeDemoUrl: "https://www.youtube.com/watch?v=y9ibCA-W9I4&feature=youtu.be",
     technologies: ["Typescript", "Discord.js", "Discord API", "Node.js", "PostgresSQL", "Redis", "Railway", ]
   },
   {
@@ -35,11 +35,11 @@ export const projects = [
     technologies: ["Vite", "React", "TypeScript", "Tailwind", "Express"],
   },
   {
-    title: "Leetify Aim Rating Data Analytics",
+    title: "Leetify Aim Rating Data Analytics - COMMING SOON",
     description:
       "Analyzes whether Leetify's aim rating correlates with player performance in Counter-Strike, as well as win percentages for each team. Scrapes thousands of games and players from the Leetify and Faceit APIs.",
-    githubUrl: "https://github.com/jbnye/AimRating",
-    deployedUrl: "https://wordle-clone.jbnye.dev/",
+    githubUrl: "https://github.com/jbnye/Leetify-Stats",
+    deployedUrl: "",
     youtubeDemoUrl: "",
     technologies: ["Vite", "React", "TypeScript", "Tailwind", "Python", "Matplotlib", "Playwright"],
   },
