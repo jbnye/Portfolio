@@ -35,7 +35,7 @@ export const projects = [
     technologies: ["Vite", "React", "TypeScript", "Tailwind", "Express"],
   },
   {
-    title: "Leetify Aim Rating Data Analytics - COMMING SOON",
+    title: "Leetify Aim Rating Data Analytics - COMING SOON",
     description:
       "Analyzes whether Leetify's aim rating correlates with player performance in Counter-Strike, as well as win percentages for each team. Scrapes thousands of games and players from the Leetify and Faceit APIs.",
     githubUrl: "https://github.com/jbnye/Leetify-Stats",
