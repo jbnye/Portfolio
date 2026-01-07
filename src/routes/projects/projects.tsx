@@ -17,7 +17,7 @@ const projectIcons: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
   "Letterboxd Higher or Lower": FaviconSVG,
   "Wordle Clone": WordleSVG,
   "Dodge Tracker Clone": MagGlassSVG,
-  "Leetify Aim Rating Data Analytics - COMMING SOON": DataSVG,
+  "Leetify Aim Rating Data Analytics - COMING SOON": DataSVG,
   "Class Guides": CGSVG,
   "Chiv Pug Bot": ChivPugBotSVG,
 };
